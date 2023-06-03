@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wfile.ru. TODO-list</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="../js/todo-app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let defArray = [{
+        id: 1,
+        name: 'Купить хлеб',
+        done: true
+      },
+      {
+        id: 2,
+        name: 'Закончить курс',
+        done: false
+      }
+
+    ]
+      createTodoApp(document.getElementById('todo-app'), 'Список дел', 'my-list', defArray);
+    });
+  </script>
+</head>
+<body>
+<div class="modal d_flex-center">
+    <div class="modal_window">
+        <button id="modal_btn" onclick="">Hello, World</button>
+    </div>
+</div>
+  <header class="header header_specialty">
+    <div class="container">
+      <nav class="nav">
+        <button class="menu__btn" type="button">
+          <span class="btn__line"></span>
+          <span class="btn__line"></span>
+          <span class="btn__line"></span>
+          <span class="btn__line"></span>
+        </button>
+        <ul class="menu">
+          <li class="menu__list"><a href="../index.html" class="menu__link">ГЛАВНАЯ</a></li>
+          <li class="menu__list"><a href="https://leroo17.github.io/succulent/index.html" class="menu__link">ПРОЕКТЫ</a></li>
+          <li class="menu__list"><a href="specialty.html" class="menu__link">ФИШКИ</a></li>
+          <li class="menu__list"><a href="about.html" class="menu__link">ОБ АВТОРЕ</a></li>
+          <li class="menu__list"><a href="blog.html" class="menu__link">БЛОГ</a></li>
+          <li class="menu__list"><a href="contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+          </ul>
+          <a href="#" class="basket"><img src="../images/basket.svg" alt=""></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main_todo">
+    <div class="container mb-5">
+        <nav class="nav">
+          <a class="nav-link" href="todo-list.html">Мои дела</a>
+        </nav>
+      </div>
+      <div id="todo-app" class="container"></div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav footer__bottom">
+        <ul class="menu__footer">
+          <li class="menu__list"><a href="../index.html" class="menu__link">ГЛАВНАЯ</a></li>
+          <li class="menu__list"><a href="https://leroo17.github.io/succulent/index.html" class="menu__link">ПРОЕКТЫ</a></li>
+          <li class="menu__list"><a href="specialty.html" class="menu__link">ФИШКИ</a></li>
+          <li class="menu__list"><a href="about.html" class="menu__link">ОБ АВТОРЕ</a></li>
+          <li class="menu__list"><a href="blog.html" class="menu__link">БЛОГ</a></li>
+          <li class="menu__list"><a href="contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

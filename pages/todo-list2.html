@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My TODO-list</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        html{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e6e0e0;
+  font-size: 14px;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#todo-inner {
+  width: 60%;
+  padding-top: 50px;
+}
+
+.todo-title {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.todo-form {
+  flex-direction: row;
+  margin-left: 60px;
+}
+
+.todo-input {
+  border: none;
+  border-top: 1px solid #b7bbba;
+  border-bottom: 1px solid #b7bbba;
+
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  width: 350px;
+  outline: none;
+}
+
+.todo-btn {
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-top: 1px solid #b7bbba;
+  border-bottom: 1px solid #b7bbba;
+}
+
+.todo-btn_plus {
+  background-image: url(../images/plus.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.item-success {
+  background-color: #30dd9b;
+}
+
+#task-inner>ul>li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 29px;
+}
+
+
+#task-inner>ul>li>div {
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 440px;
+ border-top: none;
+ position: relative;
+}
+
+.task_check {
+  height: 30px;
+  width: 30px;
+  background: url(../images/checkbox_clear.png);
+  background-size: cover;
+  border: none;
+}
+
+.task_check-done {
+  background: url(../images/checkbox_done.png);
+  background-size: cover;
+  border: none;
+
+
+}
+
+span {
+  padding-left: 10px;
+}
+
+.todo-input-first {
+  width: 440px;
+}
+
+.todo-input-done {
+  background-color: #1bf764;
+  text-decoration: line-through;
+}
+
+.del-btn {
+  height: 12px;
+  width: 12px;
+  border: none;
+  background: url(../images/close.png);
+  background-size: cover;
+  outline: none;
+  position: absolute;
+  right: 10px;
+}
+
+.down {
+  height: 40px;
+  width: 50px;
+  border: none;
+  border-top: 1px solid #b7bbba;
+  border-bottom: 1px solid #b7bbba;
+  background-image: url(../images/down.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+    </style>
+</head>
+<body>
+  <main class="todo_main d-flex-center">
+    <div id="todo-inner" class="d-flex-center"></div>
+    <div id="task-inner"></div>
+  </main>
+  <script src="../js/main_todo2.js" defer ></script>
+
+</body>
+</html>

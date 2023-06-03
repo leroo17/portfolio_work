@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Наработки по верстке сайтов</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a href="../index.html" class="works_item-link works_item-link2 works_item-link3 d_flex-center ">Назад</a>
+  <section class="pay">
+    <div class="container container_pay d_flex-center">
+      <div class="pay__inner ">
+        <div class="card">
+          <div class="card__front">
+            <div class="card__logo-inner">
+              <img src="../images/mastercard.svg" class="card__logo">
+            </div>
+            <div class="card__front-inner">
+              <div class="span__card-number">
+                <span id="card__number1">0000</span>
+                <span id="card__number2">0000</span>
+                <span id="card__number3">0000</span>
+                <span id="card__number4">0000</span>
+              </div>
+              <div class="card__date-span">
+                <span id="card__date-span1">00</span>
+                <span>/</span>
+                <span id="card__date-span2">00</span>
+              </div>
+              <div class="card__holder-span">
+                <span id="cardholder-span">CARD HOLDER</span>
+              </div>
+            </div>
+          </div>
+          <div class="card__back">
+            <div class="magnite-line"></div>
+            <div class="card__valid">
+              <span id="card__valid-span">XXX</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__form">
+          <div class="card__number-group">
+            <p class="card__number-text card__text-style" >Card Number</p>
+            <div class="card__number__inputs">
+              <input class="card__number-input card__input1" type="text" maxlength="4" onkeypress="return isNumberKey(event)">
+              <input class="card__number-input card__input2" type="text" maxlength="4" onkeypress="return isNumberKey(event)">
+              <input class="card__number-input card__input3" type="text" maxlength="4" onkeypress="return isNumberKey(event)">
+              <input class="card__number-input card__input4" type="text" maxlength="4" onkeypress="return isNumberKey(event)">
+            </div>
+          </div>
+          <div class="card__holder">
+            <p class="cardholder card__text-style">Card Holder</p>
+            <input class="card__text-input card__holder-input" type="text" maxlength="30">
+          </div>
+          <div class="card__group">
+            <div class="card__form-textgroup">
+              <p class="card__date-text card__text-style">Expiration Date</p>
+              <p class="card__valid-text card__text-style">CVC</p>
+            </div>
+            <div class="card__date">
+              <input class="card__date-input1 card__date-input" type="text" maxlength="2" onkeypress="return isNumberKey(event)">
+              <span>/</span>
+              <input class="card__date-input2 card__date-input" type="text" maxlength="2" onkeypress="return isNumberKey(event)">
+              <input class="card__valid-input card__date-input" type="text" maxlength="3" onkeypress="return isNumberKey(event)">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="pay.html" class="works_item-link4 d_flex-center">Оплатить</a>  
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>
